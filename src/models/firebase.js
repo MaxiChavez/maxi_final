@@ -21,6 +21,11 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 export { db };
+console.log("FIREBASE CONFIG DEBUG:", {
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+});
 
 // /////
 
